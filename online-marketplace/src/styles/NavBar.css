@@ -1,0 +1,42 @@
+/* NavBar.css */
+
+/* Style for the navigation bar container */
+nav {
+    background-color: #333; /* Background color */
+    padding: 10px; /* Padding for the navbar */
+  }
+  
+  /* Style for the navigation links */
+  nav ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 15px; /* Add spacing between links */
+  }
+  
+  /* Style for the navigation links */
+  nav a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Style for the logout button */
+  .logout-btn {
+    background-color: #d9534f; /* Red background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Add padding to the button */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+    nav li {
+      margin-right: 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  

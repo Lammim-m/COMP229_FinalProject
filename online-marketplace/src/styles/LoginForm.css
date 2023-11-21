@@ -1,29 +1,27 @@
-/* src/styles/LoginForm.css */
+/* LoginForm.css */
+
+/* Style for the login form container */
 .login-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-form input {
-    margin-bottom: 10px;
-    padding: 8px;
-  }
-  
-  .login-form button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover {
-    background-color: #45a049;
-  }
-  
+  max-width: 400px; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style for the form input fields */
+.login-form input {
+  width: 100%; /* Take up the full width of the container */
+  padding: 10px; /* Add padding to the input fields */
+  margin-bottom: 10px; /* Add spacing between input fields */
+}
+
+/* Style for the login buttons */
+.login-form button {
+  background-color: #5bc0de; /* Blue background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 15px; /* Add padding to the buttons */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.login-form button:hover {
+  background-color: #46b8da; /* Darker blue on hover */
+}

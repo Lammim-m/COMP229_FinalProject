@@ -1,7 +1,7 @@
 // LoginForm.js
 import React, { useState } from 'react';
 import { auth } from '../services/firebase';
-
+import '../styles/LoginForm.css';
 
 
 

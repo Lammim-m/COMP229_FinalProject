@@ -8,8 +8,8 @@ import ProfileForm from './components/ProfileForm';
 import NewProductForm from './components/NewProductForm';
 import NavBar from './components/NavBar';
 import { auth } from './services/firebase';
-import MyRoutes from './Routes'; // Adjust the import
-
+import './styles/NavBar.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   const [userAuthenticated, setUserAuthenticated] = useState(false);
@@ -27,15 +27,17 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <MyRoutes /> {/* Use MyRoutes instead of Routes */}
         {userAuthenticated ? (
           <>
             <button onClick={() => auth.signOut()}>Logout</button>
             <ProfileForm />
             <NewProductForm />
+           
+            <HomePage />
           </>
         ) : (
           <>
+            
             <LoginForm />
             <RegistrationForm />
           </>
